@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1758759043 source:c:\users\luan_\documents\codeblocks projects\teste de software - final\calculadora_preco.c
+	"calculadora_preco.h"
+
+1758759000 c:\users\luan_\documents\codeblocks projects\teste de software - final\calculadora_preco.h
+
+1758760264 source:c:\users\luan_\documents\codeblocks projects\teste de software - final\teste.c
+	<stdio.h>
+	"minunit.h"
+	"calculadora_preco.h"
+
+1684946181 c:\users\luan_\documents\codeblocks projects\teste de software - final\minunit.h
+	<Windows.h>
+	<unistd.h>
+	<time.h>
+	<sys/time.h>
+	<sys/resource.h>
+	<sys/times.h>
+	<string.h>
+	<mach/mach.h>
+	<mach/mach_time.h>
+	<stdio.h>
+	<math.h>
+
