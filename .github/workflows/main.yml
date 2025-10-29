@@ -23,7 +23,7 @@ jobs:
 
       # Compilar o projeto
       - name: Build the project
-        run: gcc -o unitario calculadora-imc/test/teste.c
+        run: TESTE DE SOFTWARE - FINAL/calculadora_preco.c
 
       # Executar o teste
       - name: Run unit tests
