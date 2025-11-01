@@ -1,9 +1,9 @@
 #include "calculadora_preco.h"
 
-// Implementação da função que calcula o preço
+// ImplementaÃ§Ã£o da funÃ§Ã£o que calcula o preÃ§o
 float calcular_preco_por_idade(int idade) {
     if (idade <= 12) {
-        return 10.0; // Criança
+        return 10.0; // CrianÃ§a
     } else if (idade >= 13 && idade <= 59) {
         return 30.0; // Adulto
     } else {
