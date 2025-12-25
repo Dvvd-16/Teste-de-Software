@@ -1,16 +1,16 @@
 #include <stdio.h>
 #include "minunit.h"             // Inclui a biblioteca de teste
-#include "calculadora_preco.h"   // Inclui nossa funÁ„o a ser testada
+#include "calculadora_preco.h"   // Inclui nossa fun√ß√£o a ser testada
 
 int tests_run = 0;
 
 
 // --- NOSSOS TESTES ---
 
-// MUDAN«A 1: As funÁıes de teste agora retornam 'void' em vez de 'char*'
+// MUDAN√áA 1: As fun√ß√µes de teste agora retornam 'void' em vez de 'char*'
 static void test_preco_crianca() {
     mu_assert("Erro: preco para crianca (10 anos) deveria ser 10.0", calcular_preco_por_idade(10) == 10.0);
-    // MUDAN«A 2: O 'return 0;' foi REMOVIDO daqui.
+    // MUDAN√áA 2: O 'return 0;' foi REMOVIDO daqui.
 }
 
 static void test_preco_adulto() {
@@ -26,8 +26,8 @@ static void test_preco_idoso() {
 static void all_tests() {
     printf("-> Executando teste: 'test_preco_crianca'... ");
     test_preco_crianca();
-    // A mensagem de OK sÛ aparece se o teste n„o falhar,
-    // pois a falha interrompe a funÁ„o.
+    // A mensagem de OK s√≥ aparece se o teste n√£o falhar,
+    // pois a falha interrompe a fun√ß√£o.
     printf("OK\n");
     tests_run++;
 
@@ -42,15 +42,15 @@ static void all_tests() {
     tests_run++;
 }
 
-// MUDAN«A 4: A funÁ„o main foi ajustada para este modelo do minunit
+// MUDAN√áA 4: A fun√ß√£o main foi ajustada para este modelo do minunit
 int main(int argc, char **argv) {
     printf("--- INICIANDO TESTES ---\n");
-    all_tests(); // Apenas chama a funÁ„o que roda os testes
+    all_tests(); // Apenas chama a fun√ß√£o que roda os testes
 
     if (minunit_status == 0) {
         printf("\nTODOS OS TESTES PASSARAM\n");
     } else {
-        // A mensagem de erro j· È impressa pela macro mu_assert nesta vers„o
+        // A mensagem de erro j√° √© impressa pela macro mu_assert nesta vers√£o
         printf("\nUM OU MAIS TESTES FALHARAM\n");
     }
     printf("Testes executados: %d\n", tests_run);
